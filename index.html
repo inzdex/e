@@ -1,50 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Universal Web Proxy</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 2em;
-    }
-    input[type="text"] {
-      width: 60%;
-      padding: 10px;
-      font-size: 16px;
-    }
-    button {
-      padding: 10px 20px;
-      margin-left: 10px;
-    }
-    iframe {
-      width: 100%;
-      height: 80vh;
-      border: 1px solid #ccc;
-      margin-top: 20px;
-    }
-  </style>
-</head>
-<body>
-  <h1>Universal Web Proxy Viewer</h1>
-  <input type="text" id="urlInput" placeholder="Enter any full website URL (https://...)" />
-  <button onclick="loadSite()">Load Site</button>
+hi im oisek
+i make websites
+some of these websites include
 
-  <iframe id="proxyFrame" sandbox="allow-scripts allow-same-origin"></iframe>
+https://inzdex.github.io/dms-concert/
+https://inzdex.github.io/schoology.github.io/
 
-  <script>
-    function loadSite() {
-      const url = document.getElementById("urlInput").value;
-      const iframe = document.getElementById("proxyFrame");
-
-      if (!url.startsWith("http")) {
-        alert("Please enter a valid URL starting with http or https.");
-        return;
-      }
-
-      const proxyUrl = "http://localhost:8080/proxy?url=" + encodeURIComponent(url);
-      iframe.src = proxyUrl;
-    }
-  </script>
-</body>
-</html>
+© 2025 PatchIT. All rights reserved.
